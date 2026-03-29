@@ -90,7 +90,7 @@ nav a:hover::after {
 
 /* Hero Section */
 .hero {
-  min-height: 90vh;
+  min-height: calc(100vh - 80px); /* Fill exact remaining screen after header */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,7 +331,7 @@ footer {
 
 /* PC Base Classes for App Page */
 .hero-logo {
-  height: 350px;
+  height: clamp(150px, 35vh, 350px);
   object-fit: contain;
   margin-bottom: 1rem;
   filter: drop-shadow(0px 0px 40px rgba(255,255,255,0.4));
@@ -339,7 +339,7 @@ footer {
 
 .hero-heading {
   letter-spacing: 2px;
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
