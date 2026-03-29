@@ -13,17 +13,12 @@ export default function Home() {
           <img 
             src="/logo/Logo_Black-removebg-preview.png" 
             alt="May Flowers Horticulture" 
-            style={{ 
-              height: '350px', 
-              objectFit: 'contain', 
-              marginBottom: '1rem',
-              filter: 'drop-shadow(0px 0px 40px rgba(255,255,255,0.4))'
-            }} 
+            className="hero-logo"
           />
-          <h1 style={{ letterSpacing: '2px', fontSize: '4.5rem', fontWeight: '400', marginBottom: '1.5rem' }}>
+          <h1 className="hero-heading">
             Elevate Your Space.
           </h1>
-          <p style={{ letterSpacing: '1px', fontSize: '1.3rem', fontWeight: '300', opacity: '0.9' }}>
+          <p className="hero-subtext">
             Curated vertical gardens & botanical installations for the modern aesthetic.
           </p>
           <div style={{ marginTop: '3rem' }}>
@@ -34,8 +29,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ padding: '8rem 5%', textAlign: 'center', background: 'var(--light)' }}>
-        <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '400' }}>Our Philosophy</h2>
+      <section className="editorial-section" style={{ background: 'var(--light)' }}>
+        <h2 className="section-title">Our Philosophy</h2>
         <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 4rem' }}></div>
         
         <div style={{ display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', maxWidth: '1200px', margin: '0 auto' }}>
@@ -61,8 +56,8 @@ export default function Home() {
       </section>
 
       {featured.length > 0 && (
-        <section style={{ padding: '8rem 5%', background: '#fff', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '400' }}>Featured Work</h2>
+        <section className="editorial-section" style={{ background: '#fff' }}>
+          <h2 className="section-title">Featured Work</h2>
           <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 5rem' }}></div>
           
           <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '1400px', margin: '0 auto' }}>

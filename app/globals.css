@@ -329,15 +329,68 @@ footer {
   transform: scale(1.05) !important;
 }
 
+/* PC Base Classes for App Page */
+.hero-logo {
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0px 0px 40px rgba(255,255,255,0.4));
+}
+
+.hero-heading {
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtext {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.editorial-section {
+  padding: 8rem 5%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .hero-logo {
+    height: 150px;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .hero-subtext {
+    font-size: 1.1rem;
+  }
+  .editorial-section {
+    padding: 4rem 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
   .details-container {
     grid-template-columns: 1fr;
   }
-  .hero h1 {
-    font-size: 2.5rem;
+  header {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 5%;
   }
   nav ul {
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
