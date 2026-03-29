@@ -3,53 +3,88 @@ import { getGalleryImages } from '../utils/getGalleryImages';
 
 export default function Home() {
   const allImages = getGalleryImages();
-  // Get 4 images for the featured section on the homepage, or fewer if not available
-  const featured = allImages.slice(0, 4);
+  // We'll show an asymmetrical 3-image spread for a more "moodboard / cafe" vibe
+  const featured = allImages.slice(0, 3);
   
   return (
     <>
       <section className="hero">
-        <div>
-          <img src="/logo.png" alt="May Flowers Horticulture" style={{ height: '150px', objectFit: 'contain', marginBottom: '2rem', filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.5))' }} />
-          <h1>Elevate Your Environment</h1>
-          <p>Discover our premium, modern vertical gardens and botanical installations. Designed for aesthetics, engineered for nature.</p>
-          <Link href="/gallery" className="btn" style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}>Explore Our Work</Link>
+        <div style={{ padding: '0 2rem' }}>
+          <img 
+            src="/logo/Logo_White.png" 
+            alt="May Flowers Horticulture" 
+            style={{ 
+              height: '180px', 
+              objectFit: 'contain', 
+              marginBottom: '3rem', 
+              filter: 'drop-shadow(0px 15px 30px rgba(0,0,0,0.8))' 
+            }} 
+          />
+          <h1 style={{ letterSpacing: '2px', fontSize: '4.5rem', fontWeight: '400', marginBottom: '1.5rem' }}>
+            Elevate Your Space.
+          </h1>
+          <p style={{ letterSpacing: '1px', fontSize: '1.3rem', fontWeight: '300', opacity: '0.9' }}>
+            Curated vertical gardens & botanical installations for the modern aesthetic.
+          </p>
+          <div style={{ marginTop: '3rem' }}>
+            <Link href="/gallery" className="btn" style={{ fontSize: '1.1rem', padding: '1.2rem 3.5rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '2px' }}>
+              View Portfolio
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section style={{ padding: '6rem 5%', textAlign: 'center', background: 'var(--light)' }}>
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem' }}>Why Choose May Flowers Horticulture?</h2>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
-          <div style={{ background: 'white', padding: '3rem 2rem', borderRadius: '20px', maxWidth: '350px', boxShadow: '0 15px 35px rgba(0,0,0,0.05)', transition: 'transform 0.3s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--primary)', marginBottom: '1.5rem', fontSize: '1.5rem' }}>✨ Aesthetic Perfection</h3>
-            <p style={{ color: '#666', fontSize: '1.1rem' }}>Every installation is treated as a piece of living art, tailored flawlessly to your space.</p>
+      <section style={{ padding: '8rem 5%', textAlign: 'center', background: 'var(--light)' }}>
+        <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '400' }}>Our Philosophy</h2>
+        <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 4rem' }}></div>
+        
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
+            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Living Art</h3>
+            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
+              Every installation is thoughtfully composed as a piece of living art, tailored flawlessly to harmonize with your interior architecture.
+            </p>
           </div>
-          <div style={{ background: 'white', padding: '3rem 2rem', borderRadius: '20px', maxWidth: '350px', boxShadow: '0 15px 35px rgba(0,0,0,0.05)', transition: 'transform 0.3s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--primary)', marginBottom: '1.5rem', fontSize: '1.5rem' }}>🌿 Premium Quality</h3>
-            <p style={{ color: '#666', fontSize: '1.1rem' }}>We source only the healthiest, most vibrant flora alongside top-tier architectural materials.</p>
+          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
+            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Organic Quality</h3>
+            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
+              We source only the healthiest, vibrant flora alongside premium, sustainable materials to ensure lasting elegance.
+            </p>
           </div>
-          <div style={{ background: 'white', padding: '3rem 2rem', borderRadius: '20px', maxWidth: '350px', boxShadow: '0 15px 35px rgba(0,0,0,0.05)', transition: 'transform 0.3s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--primary)', marginBottom: '1.5rem', fontSize: '1.5rem' }}>💧 Effortless Care</h3>
-            <p style={{ color: '#666', fontSize: '1.1rem' }}>Our modern installations feature smart watering systems so your greenery thrives naturally.</p>
+          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
+            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Seamless Care</h3>
+            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
+              Enjoy the tranquility of nature with zero stress. Our modern systems feature integrated, intelligent watering technologies.
+            </p>
           </div>
         </div>
       </section>
 
       {featured.length > 0 && (
-        <section style={{ padding: '6rem 0', background: 'white' }}>
-          <h2 style={{ textAlign: 'center', margin: '0 0 4rem', fontSize: '2.5rem' }}>Featured Installations</h2>
+        <section style={{ padding: '8rem 5%', background: '#fff', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '400' }}>Featured Work</h2>
+          <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 5rem' }}></div>
           
-          <div className="masonry-gallery" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '1400px', margin: '0 auto' }}>
             {featured.map((imgSrc, index) => (
-              <div key={index} className="gallery-item" style={{ height: '350px' }}>
+              <div key={index} style={{ flex: '1', minWidth: '300px', height: '450px', overflow: 'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imgSrc} alt={`Featured Work ${index + 1}`} loading="lazy" />
+                <img 
+                  src={imgSrc} 
+                  alt={`Selected Work ${index + 1}`} 
+                  loading="lazy" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.8s ease' }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                />
               </div>
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/gallery" className="btn" style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}>View Full Portfolio</Link>
+          <div style={{ textAlign: 'center', marginTop: '5rem' }}>
+            <Link href="/gallery" className="btn" style={{ fontSize: '1.1rem', padding: '1.2rem 3.5rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '2px', background: 'transparent', color: 'var(--dark)', border: '1px solid var(--dark)', boxShadow: 'none' }}>
+              Explore The Gallery
+            </Link>
           </div>
         </section>
       )}

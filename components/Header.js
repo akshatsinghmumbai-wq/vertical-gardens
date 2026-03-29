@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <div className="logo">
         <Link href="/">
-          <img src="/logo.png" alt="May Flowers Horticulture Logo" style={{ height: '60px', objectFit: 'contain', cursor: 'pointer' }} />
+          <img src="/logo/Logo_White.png" alt="May Flowers Horticulture" style={{ height: '40px', objectFit: 'contain', cursor: 'pointer', marginTop: '5px' }} />
         </Link>
       </div>
       <nav>
