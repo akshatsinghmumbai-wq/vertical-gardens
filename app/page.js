@@ -14,10 +14,11 @@ export default function Home() {
             src="/logo/Logo_White.png" 
             alt="May Flowers Horticulture" 
             style={{ 
-              height: '180px', 
+              height: '260px', 
               objectFit: 'contain', 
-              marginBottom: '3rem', 
-              filter: 'drop-shadow(0px 15px 30px rgba(0,0,0,0.8))' 
+              marginBottom: '2rem',
+              mixBlendMode: 'overlay',
+              opacity: '0.95'
             }} 
           />
           <h1 style={{ letterSpacing: '2px', fontSize: '4.5rem', fontWeight: '400', marginBottom: '1.5rem' }}>
