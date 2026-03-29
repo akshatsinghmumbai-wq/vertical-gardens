@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <Link href="/" style={{ color: '#fff', fontSize: '1.1rem', fontWeight: '400', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-          <span style={{ color: 'var(--primary)', fontSize: '1.4rem' }}>🌿</span> MAY FLOWERS HORTICULTURE
+        <Link href="/" style={{ color: '#fff', fontSize: '1.1rem', fontWeight: '400', letterSpacing: '1px' }}>
+          MAY FLOWERS HORTICULTURE
         </Link>
       </div>
       <nav>
