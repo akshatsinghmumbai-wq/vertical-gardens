@@ -74,8 +74,7 @@ export default function Home() {
                   alt={`Selected Work ${index + 1}`} 
                   loading="lazy" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.8s ease' }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                  className="hero-featured-image"
                 />
               </div>
             ))}

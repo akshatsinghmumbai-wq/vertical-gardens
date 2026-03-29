@@ -325,6 +325,10 @@ footer {
   transform: scale(1.05);
 }
 
+.hero-featured-image:hover {
+  transform: scale(1.05) !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .details-container {
