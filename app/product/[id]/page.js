@@ -31,7 +31,7 @@ export default function ProductPage({ params }) {
            ← Back to Catalog
         </Link>
         <h1>{product.name}</h1>
-        <div className="price">${product.price}</div>
+
         <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '2rem' }}>{product.description}</p>
         
         <h3>Premium Features:</h3>
@@ -41,9 +41,9 @@ export default function ProductPage({ params }) {
           ))}
         </ul>
 
-        <button className="btn" style={{ marginTop: '1rem', width: '100%', fontSize: '1.2rem', padding: '1rem' }}>
-          Add to Cart 🛒
-        </button>
+        <Link href="/about" className="btn" style={{ marginTop: '1rem', width: '100%', fontSize: '1.2rem', padding: '1rem', display: 'block', textAlign: 'center' }}>
+          Enquire Now ✉️
+        </Link>
       </div>
     </div>
   );

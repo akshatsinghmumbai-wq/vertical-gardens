@@ -13,6 +13,15 @@ export default function About() {
         premium, modern vertical gardens that are both beautiful and fully functional. Our mission is 
         to merge technology with biology, creating effortless ecosystems that breathe life into your home.
       </p>
+      
+      <div style={{ marginTop: '4rem', padding: '2rem', background: '#f9f9f9', borderRadius: '15px', border: '1px solid #eee' }}>
+        <h2 style={{ color: 'var(--primary)', marginBottom: '1.5rem' }}>Get in Touch for Enquiries</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '1.2rem', color: '#444' }}>
+          <p><strong>Contact Person:</strong> Chandan Singh</p>
+          <p><strong>Phone:</strong> <a href="tel:+919822584154" style={{ color: 'var(--primary)', textDecoration: 'none' }}>+91 9822584154</a></p>
+          <p><strong>Email:</strong> <a href="mailto:mfhmumbai@gmail.com" style={{ color: 'var(--primary)', textDecoration: 'none' }}>mfhmumbai@gmail.com</a></p>
+        </div>
+      </div>
     </div>
   );
 }

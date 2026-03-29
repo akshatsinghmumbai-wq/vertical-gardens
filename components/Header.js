@@ -4,14 +4,15 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <span style={{ fontSize: '2rem' }}>🌿</span> May Flowers Horticulture
+        <Link href="/">
+          <img src="/logo.jpg" alt="May Flowers Horticulture Logo" style={{ height: '60px', objectFit: 'contain', cursor: 'pointer' }} />
+        </Link>
       </div>
       <nav>
         <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/catalog">Catalog</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/about">About & Contact</Link></li>
         </ul>
       </nav>
     </header>
