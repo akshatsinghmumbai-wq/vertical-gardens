@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div>
+          <img src="/logo.png" alt="May Flowers Horticulture" style={{ height: '150px', objectFit: 'contain', marginBottom: '2rem', filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.5))' }} />
           <h1>Bring Nature Indoors</h1>
           <p>Elevate your space with our premium, modern vertical gardens. Designed for aesthetics, engineered for growth.</p>
           <Link href="/catalog" className="btn">Shop the Catalog</Link>
