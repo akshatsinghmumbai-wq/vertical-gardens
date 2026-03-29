@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <Link href="/">
-          <img src="/logo/Logo_White.png" alt="May Flowers Horticulture" style={{ height: '40px', objectFit: 'contain', cursor: 'pointer', marginTop: '5px' }} />
+        <Link href="/" style={{ color: '#fff', fontSize: '1.2rem', fontWeight: '400', letterSpacing: '2px' }}>
+          MAY FLOWERS
         </Link>
       </div>
       <nav>

@@ -11,14 +11,13 @@ export default function Home() {
       <section className="hero">
         <div style={{ padding: '0 2rem' }}>
           <img 
-            src="/logo/Logo_White.png" 
+            src="/logo/Logo_Black-removebg-preview.png" 
             alt="May Flowers Horticulture" 
             style={{ 
-              height: '260px', 
+              height: '350px', 
               objectFit: 'contain', 
-              marginBottom: '2rem',
-              mixBlendMode: 'overlay',
-              opacity: '0.95'
+              marginBottom: '1rem',
+              filter: 'drop-shadow(0px 0px 40px rgba(255,255,255,0.4))'
             }} 
           />
           <h1 style={{ letterSpacing: '2px', fontSize: '4.5rem', fontWeight: '400', marginBottom: '1.5rem' }}>
