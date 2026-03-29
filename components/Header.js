@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <span style={{ fontSize: '2rem' }}>🌿</span> VertiGrow
+        <span style={{ fontSize: '2rem' }}>🌿</span> May Flowers Horticulture
       </div>
       <nav>
         <ul>

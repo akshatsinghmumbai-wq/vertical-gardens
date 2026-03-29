@@ -11,7 +11,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const product = products.find(p => p.id === params.id) || products[0];
   return {
-    title: `${product.name} | VertiGrow`,
+    title: `${product.name} | May Flowers Horticulture`,
     description: product.shortDec,
   };
 }

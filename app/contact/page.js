@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Contact | VertiGrow',
-  description: 'Get in touch with the VertiGrow team.',
+  title: 'Contact | May Flowers Horticulture',
+  description: 'Get in touch with the May Flowers Horticulture team.',
 };
 
 export default function Contact() {

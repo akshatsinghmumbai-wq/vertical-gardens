@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-col">
           <div className="logo" style={{ color: 'white', marginBottom: '1rem', justifyContent: 'center' }}>
-            🌿 VertiGrow
+            🌿 May Flowers Horticulture
           </div>
           <p>The premium vertical gardening solution.</p>
         </div>
@@ -34,7 +34,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p style={{ marginTop: '2rem', color: '#888' }}>&copy; {new Date().getFullYear()} VertiGrow. All rights reserved.</p>
+      <p style={{ marginTop: '2rem', color: '#888' }}>&copy; {new Date().getFullYear()} May Flowers Horticulture. All rights reserved.</p>
     </footer>
   );
 }

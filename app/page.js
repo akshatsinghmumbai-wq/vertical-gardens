@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       <section style={{ padding: '4rem 5%', textAlign: 'center' }}>
-        <h2>Why Choose VertiGrow?</h2>
+        <h2>Why Choose May Flowers Horticulture?</h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '2rem', flexWrap: 'wrap' }}>
           <div style={{ background: 'white', padding: '2rem', borderRadius: '15px', maxWidth: '300px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)' }}>
             <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>💧 Smart Watering</h3>

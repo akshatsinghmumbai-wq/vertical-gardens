@@ -2,7 +2,7 @@ import ProductCard from '../../components/ProductCard';
 import { products } from '../../data/products';
 
 export const metadata = {
-  title: 'Catalog | VertiGrow',
+  title: 'Catalog | May Flowers Horticulture',
   description: 'Browse our full collection of 25 premium vertical gardens.',
 };
 
