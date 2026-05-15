@@ -23,19 +23,33 @@ export function getGalleryImages() {
           const relativePath = path.relative(path.join(process.cwd(), 'public'), filePath);
           const src = '/' + relativePath.replace(/\\/g, '/');
           
-          // Generate beautiful plant name from filename
-          let name = path.basename(file, ext);
-          // Remove sizes like "200kb", "3mb", etc.
-          name = name.replace(/\d+(kb|mb|mp)/gi, '');
-          // Remove leftover numbers and special characters, replace with spaces
-          name = name.replace(/[-_0-9]+/g, ' ');
-          // Trim extra spaces and capitalize each word
-          name = name.trim().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+          // Look up plant data in our AI database
+          const baseName = path.basename(file, ext).toLowerCase();
           
-          // Fallback if name ends up empty
-          if (!name) name = "Beautiful Vertical Garden";
+          let plantData = null;
+          try {
+            const dbPath = path.join(process.cwd(), 'utils', 'plantData.json');
+            if (fs.existsSync(dbPath)) {
+              const dbContent = fs.readFileSync(dbPath, 'utf8');
+              const db = JSON.parse(dbContent);
+              
+              // Attempt to match the exact filename or a partial match
+              if (db[baseName]) {
+                plantData = db[baseName];
+              } else {
+                // Try fuzzy match
+                const matchKey = Object.keys(db).find(k => baseName.includes(k) || k.includes(baseName));
+                if (matchKey) plantData = db[matchKey];
+              }
+            }
+          } catch (e) {
+            console.error("Error reading plant database:", e);
+          }
 
-          images.push({ src, name });
+          let name = plantData ? plantData.name : "Beautiful Vertical Garden Plant";
+          let description = plantData ? plantData.description : "A stunning, lush tropical plant that thrives in vertical installations, adding rich texture and vibrant greenery to any space.";
+
+          images.push({ src, name, description });
         }
       }
     });

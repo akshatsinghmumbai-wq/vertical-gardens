@@ -44,15 +44,9 @@ export default function GalleryClient({ images }) {
               <div className="modal-info">
                 <h2>{selectedImage.name}</h2>
                 <div className="modal-divider"></div>
-                <p>Scan the QR code to visit our website and enquire about this exact installation!</p>
-                
-                <div className="qr-container">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img 
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mayflowershorticulture.com&color=4f854b`}
-                    alt="QR Code to Mayflowers Horticulture"
-                  />
-                </div>
+                <p style={{ fontSize: '1.2rem', lineHeight: '1.8', fontStyle: 'italic', color: '#555' }}>
+                  {selectedImage.description}
+                </p>
               </div>
             </div>
           </div>

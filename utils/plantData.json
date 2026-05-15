@@ -1,0 +1,146 @@
+{
+  "adaintum": {
+    "name": "Adiantum (Maidenhair Fern)",
+    "description": "A delicate and incredibly beautiful fern known for its feathery, light green foliage and distinct dark stems. It adds a soft, airy texture to any vertical garden composition."
+  },
+  "alpenia": {
+    "name": "Alpinia (Ginger Lily)",
+    "description": "A striking tropical plant with lush, broad leaves and spectacular flowers. It provides bold structure and a dramatic flair, perfect for creating a dense jungle aesthetic."
+  },
+  "areca": {
+    "name": "Areca Palm",
+    "description": "Known for its smooth, golden trunks and feathery fronds, the Areca Palm brings an instant tropical vibe. It is highly effective at purifying indoor air."
+  },
+  "bird_nest": {
+    "name": "Bird's Nest Fern",
+    "description": "Characterized by its large, apple-green, unbroken fronds that form a distinctive rosette. It thrives in the humid, shaded environments often found in vertical gardens."
+  },
+  "black_lily": {
+    "name": "Black Lily",
+    "description": "An exotic and rare addition featuring striking, dark, almost black blooms. It creates a stunning visual contrast against bright green foliage."
+  },
+  "brazil": {
+    "name": "Philodendron Brasil",
+    "description": "A beautiful trailing plant with heart-shaped leaves painted with strokes of yellow and lime green. It cascades elegantly down vertical walls."
+  },
+  "elk_horn": {
+    "name": "Elkhorn Fern",
+    "description": "A fascinating epiphytic fern with unique fronds that resemble the antlers of an elk. It grows naturally on trees and is perfect for mounting on vertical structures."
+  },
+  "giant": {
+    "name": "Giant Philodendron",
+    "description": "Featuring massive, glossy, deeply lobed leaves, this plant is a true showstopper. It creates an incredible sense of scale and lushness."
+  },
+  "iris blue": {
+    "name": "Blue Iris",
+    "description": "Renowned for its spectacular, vividly colored flowers and slender, sword-like leaves. It adds a brilliant pop of color and vertical structure."
+  },
+  "iris yello": {
+    "name": "Yellow Iris",
+    "description": "A radiant flowering plant that produces bright, cheerful yellow blooms. It brings energy and contrast to deeply shaded green walls."
+  },
+  "kang": {
+    "name": "Kangaroo Paw Fern",
+    "description": "An incredibly hardy fern with leathery, uniquely shaped fronds. It creates dense, highly textured clusters that are incredibly resilient."
+  },
+  "kerala": {
+    "name": "Tropical Kerala Plant",
+    "description": "A vibrant, broad-leafed tropical species native to humid climates. It provides immense coverage and a rich, deep green backdrop."
+  },
+  "kerala100": {
+    "name": "Tropical Kerala Plant",
+    "description": "A vibrant, broad-leafed tropical species native to humid climates. It provides immense coverage and a rich, deep green backdrop."
+  },
+  "leuco": {
+    "name": "Leucojum",
+    "description": "A delicate, graceful plant known for its charming, bell-shaped white flowers. It offers a soft, elegant touch to refined garden designs."
+  },
+  "lily": {
+    "name": "Peace Lily",
+    "description": "Famous for its dark, glossy leaves and striking white floral spathes. It is one of the most effective plants for filtering indoor air toxins."
+  },
+  "linea": {
+    "name": "Stromanthe Triostar",
+    "description": "A spectacular foliage plant featuring vibrant splashes of pink, cream, and green. It provides an immediate and dramatic burst of color."
+  },
+  "littlephil": {
+    "name": "Philodendron 'Little Phil'",
+    "description": "A compact, highly adaptable philodendron variant that forms dense, bushy growth. It is perfect for filling in the lower canopies of a living wall."
+  },
+  "maidenhair": {
+    "name": "Maidenhair Fern",
+    "description": "A delicate and incredibly beautiful fern known for its feathery, light green foliage and distinct dark stems. It adds a soft, airy texture to any composition."
+  },
+  "micans": {
+    "name": "Philodendron Micans",
+    "description": "A stunning vining plant with velvety, heart-shaped leaves that shimmer with a bronze-green hue. It adds an unparalleled texture and richness to the wall."
+  },
+  "micro": {
+    "name": "Microsorum",
+    "description": "A robust, highly textured fern that spreads beautifully. Its intricate frond structures create dense, lush layers in a vertical arrangement."
+  },
+  "microsorum-punctatum": {
+    "name": "Microsorum Punctatum",
+    "description": "An incredibly tough fern with leathery, strap-like leaves. It is perfect for creating durable, long-lasting greenery in challenging environments."
+  },
+  "monstera": {
+    "name": "Monstera Deliciosa",
+    "description": "The iconic tropical plant famous for its large, heavily fenestrated leaves. It brings a powerful, architectural presence to any indoor jungle."
+  },
+  "monstera_mini": {
+    "name": "Mini Monstera (Rhaphidophora)",
+    "description": "Resembling a miniature Monstera, this vigorous climber features beautifully split leaves. It scales vertical surfaces rapidly and elegantly."
+  },
+  "nephro": {
+    "name": "Nephrolepis (Boston Fern)",
+    "description": "A classic, elegant fern with gracefully arching fronds. It is highly effective at increasing ambient humidity and purifying the air."
+  },
+  "oxygold": {
+    "name": "Philodendron 'Lemon Lime'",
+    "description": "A vibrant, neon-yellow trailing plant that cascades beautifully. It provides an incredibly striking contrast against darker, moody foliage."
+  },
+  "oxygreen": {
+    "name": "Heartleaf Philodendron",
+    "description": "A classic, incredibly resilient vining plant with glossy heart-shaped leaves. It is the perfect foundational plant for draping over vertical structures."
+  },
+  "ped": {
+    "name": "Philodendron Pedatum",
+    "description": "A unique climbing aroid featuring deeply lobed, star-shaped leaves. It adds an exotic, almost alien-like architectural shape to the wall."
+  },
+  "pedatum": {
+    "name": "Philodendron Pedatum",
+    "description": "A unique climbing aroid featuring deeply lobed, star-shaped leaves. It adds an exotic, almost alien-like architectural shape to the wall."
+  },
+  "pendanas": {
+    "name": "Pandanus (Screw Pine)",
+    "description": "A striking tropical plant with long, strap-like leaves that arrange in a spiral. It adds a spiky, architectural texture to the garden."
+  },
+  "perisoverde": {
+    "name": "Philodendron Paraiso Verde",
+    "description": "A highly sought-after collector's plant featuring incredibly elongated leaves with stunning, mottled variegation. A true centerpiece."
+  },
+  "philogiant": {
+    "name": "Philodendron Giganteum",
+    "description": "Featuring massive, glossy, deeply lobed leaves, this plant is a true showstopper. It creates an incredible sense of scale and lushness."
+  },
+  "rabbit": {
+    "name": "Rabbit's Foot Fern",
+    "description": "A charming fern known for its furry, creeping rhizomes that resemble rabbit paws. It creates beautiful, textured ground cover on vertical surfaces."
+  },
+  "ring": {
+    "name": "Philodendron 'Ring of Fire'",
+    "description": "An incredibly unique hybrid featuring serrated leaf edges and stunning variegation ranging from sunset orange to deep green."
+  },
+  "selloum": {
+    "name": "Philodendron Selloum",
+    "description": "A massive, tree-like philodendron with deeply divided, ruffled leaves. It brings an immense, prehistoric jungle energy to the installation."
+  },
+  "subhstatum": {
+    "name": "Philodendron Subhastatum",
+    "description": "A stunning, rare variety featuring glossy green tops and brilliant, blood-red undersides. It adds an incredible flash of color when viewed from below."
+  },
+  "sword fern": {
+    "name": "Sword Fern",
+    "description": "A robust, deeply green fern with stiff, upright fronds. It is incredibly hardy and creates a powerful, structured baseline for vertical designs."
+  }
+}
