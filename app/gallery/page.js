@@ -1,5 +1,5 @@
 import { getGalleryImages } from '../../utils/getGalleryImages';
-import Image from 'next/image';
+import GalleryClient from '../../components/GalleryClient';
 import Link from 'next/link';
 
 export const metadata = {
@@ -31,19 +31,7 @@ export default function GalleryPage() {
         </p>
       </div>
 
-      <div className="masonry-gallery">
-        {images.map((imgSrc, index) => (
-          <div key={index} className="gallery-item">
-            {/* We use a standard img tag because we don't know the exact dimensions beforehand to pass to Next Image easily */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src={imgSrc} 
-              alt={`May Flowers Horticulture Installation ${index + 1}`} 
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      <GalleryClient images={images} />
 
       <div style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '2rem' }}>
         <Link href="/about" className="btn" style={{ fontSize: '1.3rem', padding: '1rem 3rem' }}>

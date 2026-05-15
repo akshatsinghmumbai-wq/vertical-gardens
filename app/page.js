@@ -66,11 +66,11 @@ export default function Home() {
           <h2 className="section-title">Featured Projects</h2>
           
           <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '1400px', margin: '0 auto', marginTop: '3rem' }}>
-            {featured.map((imgSrc, index) => (
+            {featured.map((img, index) => (
               <div key={index} style={{ flex: '1', minWidth: '300px', height: '450px', overflow: 'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
-                  src={imgSrc} 
+                  src={img.src} 
                   alt={`Selected Work ${index + 1}`} 
                   loading="lazy" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.8s ease' }}
