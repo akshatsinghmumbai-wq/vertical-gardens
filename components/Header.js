@@ -2,17 +2,26 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header>
+    <header className="main-header">
       <div className="logo">
-        <Link href="/" style={{ color: '#fff', fontSize: '1.1rem', fontWeight: '400', letterSpacing: '1px' }}>
-          MAY FLOWERS HORTICULTURE
+        <Link href="/">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
+            src="/logo/Logo_Black-removebg-preview.png" 
+            alt="Mayflower's Horticulture" 
+            style={{ height: '60px', objectFit: 'contain' }}
+          />
         </Link>
       </div>
       <nav>
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/gallery">Our Work</Link></li>
-          <li><Link href="/about">About & Contact</Link></li>
+          <li><Link href="/" className="active">HOME</Link></li>
+          <li><Link href="/">SOLUTIONS</Link></li>
+          <li><Link href="/">PROJECTS</Link></li>
+          <li><Link href="/">RESIDENTIAL</Link></li>
+          <li><Link href="/">COMMERCIAL</Link></li>
+          <li><Link href="/">BLOG</Link></li>
+          <li><Link href="/">CONTACT</Link></li>
         </ul>
       </nav>
     </header>

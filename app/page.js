@@ -3,64 +3,69 @@ import { getGalleryImages } from '../utils/getGalleryImages';
 
 export default function Home() {
   const allImages = getGalleryImages();
-  // We'll show an asymmetrical 3-image spread for a more "moodboard / cafe" vibe
   const featured = allImages.slice(0, 3);
   
   return (
     <>
       <section className="hero">
-        <div style={{ padding: '0 2rem' }}>
-          <img 
-            src="/logo/Logo_Black-removebg-preview.png" 
-            alt="May Flowers Horticulture" 
-            className="hero-logo"
-          />
-          <h1 className="hero-heading">
-            Elevate Your Space.
-          </h1>
+        <div className="hero-content">
+          <h1 className="hero-heading">Bring Your Walls to Life.</h1>
           <p className="hero-subtext">
-            Curated vertical gardens & botanical installations for the modern aesthetic.
+            Discover sustainable, custom-designed vertical garden systems for any space.
           </p>
-          <div style={{ marginTop: '3rem' }}>
-            <Link href="/gallery" className="btn" style={{ fontSize: '1.1rem', padding: '1.2rem 3.5rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '2px' }}>
-              View Portfolio
+          <div style={{ marginTop: '2rem' }}>
+            <Link href="/gallery" className="btn btn-primary">
+              EXPLORE OUR VERTICAL GARDENS
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="editorial-section" style={{ background: 'var(--light)' }}>
-        <h2 className="section-title">Our Philosophy</h2>
-        <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 4rem' }}></div>
+      <section className="services-section">
+        <h2 className="section-title">Our Services</h2>
         
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Living Art</h3>
-            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Every installation is thoughtfully composed as a piece of living art, tailored flawlessly to harmonize with your interior architecture.
-            </p>
+        <div className="services-grid">
+          <div className="service-card">
+            <div className="service-icon">
+              {/* Design Icon */}
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Design</h3>
           </div>
-          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Organic Quality</h3>
-            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              We source only the healthiest, vibrant flora alongside premium, sustainable materials to ensure lasting elegance.
-            </p>
+          
+          <div className="service-card">
+            <div className="service-icon">
+              {/* Installation Icon */}
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3>Installation</h3>
           </div>
-          <div style={{ background: '#fff', padding: '4rem 3rem', flex: '1', minWidth: '300px', border: '1px solid #eae1d8', transition: 'all 0.4s ease' }} className="feature-card">
-            <h3 style={{ color: 'var(--dark)', marginBottom: '1.5rem', fontSize: '1.8rem', fontWeight: '400' }}>Seamless Care</h3>
-            <p style={{ color: '#7a7a7a', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Enjoy the tranquility of nature with zero stress. Our modern systems feature integrated, intelligent watering technologies.
-            </p>
+          
+          <div className="service-card">
+            <div className="service-icon">
+              {/* Maintenance Icon */}
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2v20"></path>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Maintenance</h3>
           </div>
         </div>
       </section>
 
       {featured.length > 0 && (
-        <section className="editorial-section" style={{ background: '#fff' }}>
-          <h2 className="section-title">Featured Work</h2>
-          <div style={{ width: '60px', height: '2px', background: 'var(--primary)', margin: '0 auto 5rem' }}></div>
+        <section className="editorial-section" style={{ background: '#fff', paddingTop: '0' }}>
+          <h2 className="section-title">Featured Projects</h2>
           
-          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '1400px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '1400px', margin: '0 auto', marginTop: '3rem' }}>
             {featured.map((imgSrc, index) => (
               <div key={index} style={{ flex: '1', minWidth: '300px', height: '450px', overflow: 'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -75,9 +80,9 @@ export default function Home() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '5rem' }}>
-            <Link href="/gallery" className="btn" style={{ fontSize: '1.1rem', padding: '1.2rem 3.5rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '2px', background: 'transparent', color: 'var(--dark)', border: '1px solid var(--dark)', boxShadow: 'none' }}>
-              Explore The Gallery
+          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
+            <Link href="/gallery" className="btn btn-outline">
+              VIEW ALL PROJECTS
             </Link>
           </div>
         </section>
