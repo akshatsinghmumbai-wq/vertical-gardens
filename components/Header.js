@@ -16,12 +16,7 @@ export default function Header() {
       <nav>
         <ul>
           <li><Link href="/" className="active">HOME</Link></li>
-          <li><Link href="/">SOLUTIONS</Link></li>
-          <li><Link href="/">PROJECTS</Link></li>
-          <li><Link href="/">RESIDENTIAL</Link></li>
-          <li><Link href="/">COMMERCIAL</Link></li>
-          <li><Link href="/">BLOG</Link></li>
-          <li><Link href="/">CONTACT</Link></li>
+          <li><Link href="/about">CONTACT</Link></li>
         </ul>
       </nav>
     </header>
