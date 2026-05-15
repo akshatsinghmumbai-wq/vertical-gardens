@@ -79,8 +79,7 @@ nav a:hover, nav a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Use a high quality vertical garden image here */
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('/wallpaper/RgB1M.jpg') center/cover no-repeat;
+  background: radial-gradient(circle at center, #1b3d22 0%, #0d2111 70%, #061208 100%);
   padding: 2rem;
 }
 

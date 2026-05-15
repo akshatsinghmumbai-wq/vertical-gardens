@@ -9,13 +9,14 @@ export default function Header() {
           <img 
             src="/logo/Logo_Black-removebg-preview.png" 
             alt="Mayflower's Horticulture" 
-            style={{ height: '60px', objectFit: 'contain' }}
+            style={{ height: '100px', objectFit: 'contain' }}
           />
         </Link>
       </div>
       <nav>
         <ul>
           <li><Link href="/" className="active">HOME</Link></li>
+          <li><Link href="/gallery">PORTFOLIO</Link></li>
           <li><Link href="/about">CONTACT</Link></li>
         </ul>
       </nav>

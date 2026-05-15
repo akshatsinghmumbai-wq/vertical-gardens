@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div style={{ marginTop: '2rem' }}>
             <Link href="/gallery" className="btn btn-primary">
-              EXPLORE OUR VERTICAL GARDENS
+              VIEW OUR PORTFOLIO
             </Link>
           </div>
         </div>
